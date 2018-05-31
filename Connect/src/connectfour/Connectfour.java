@@ -128,7 +128,7 @@ public void actionPerformed(ActionEvent e) {
 						}
 						break;
 					}
-					break;
+					
 				}
 		}
 	}	

@@ -13,6 +13,14 @@ private JButton[] header = new JButton[7];
 private JLabel[][] labels = new JLabel[6][7];
 int i = 0;
 int j = 0;
+int row1 = 5;
+int row2 = 5;
+int row3 = 5;
+int row4 = 5;
+int row5 = 5;
+int row6 = 5;
+int row7 = 5;
+boolean playerblue = true;
 	
 public Connectfour(){
 	super("Connectfour");
@@ -67,8 +75,15 @@ public void actionPerformed(ActionEvent e) {
 	if(action.equals("0")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 0) {
-						labels[i][j].setText("yup");
+					if(j == 0 && i == row1) {
+						row1--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
 			}
 		}
@@ -76,61 +91,103 @@ public void actionPerformed(ActionEvent e) {
 	if(action.equals("1")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 1) {
-						labels[i][j].setText("yup");
+					if(j == 1 && i == row2) {
+						row2--;
+						if(playerblue) {
+						labels[i][j].setBackground(Color.BLUE);
+						playerblue = false;
+						} else {
+							labels[i][j].setBackground(Color.RED);
+							playerblue = true;
+						}
 					}
 				}
 		}
 	}
+	
 	if(action.equals("2")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 2) {
-						labels[i][j].setText("yup");
+					if(j == 2 && i == row3) {
+						row3--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
 				}
 		}
 	}
+	
 	if(action.equals("3")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 3) {
-						labels[i][j].setText("yup");
+					if(j == 3 && i == row4) {
+						row4--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
 				}
 			}
 	}
+	
 	if(action.equals("4")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 4) {
-						labels[i][j].setText("yup");
+					if(j == 4 && i == row5) {
+						row5--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
 				}
 		}
 	}
+	
 	if(action.equals("5")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 5) {
-						labels[i][j].setText("yup");
+					if(j == 5 && i == row6) {
+						row6--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
 				}
 		}
 	}
+	
 	if(action.equals("6")) {
 		for(i = 0; i < labels.length; i++) {
 				for(j = 0; j < labels[i].length; j++) {
-					if(j == 6) {
-						if(!(labels[i][j].getText().equals("yup"))) {
-							labels[i][j].setText("yup");
-							break;
-						}
-						break;
+					if(j == 6 && i == row7) {
+						row7--;
+						if(playerblue) {
+							labels[i][j].setBackground(Color.BLUE);
+							playerblue = false;
+							} else {
+								labels[i][j].setBackground(Color.RED);
+								playerblue = true;
+							}
 					}
-					
 				}
-		}
+			}
 	}	
 }
 }
